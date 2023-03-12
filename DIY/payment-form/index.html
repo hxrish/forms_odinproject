@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <h2>Payment form</h2>
+        <p>Required fields are followed by <span aria-label="reqired">*</span></p>
+
+        <section>
+            <h2>Contact information</h2>
+            <fieldset>
+                <legend>Title</legend>
+                <ul>
+                    <li>
+                        <label for="ace">
+                            <input type="radio" name="ace" value="Ace" id="ace">
+                            Ace
+                        </label>
+                    </li>
+                    <li>
+                        <label for="King">
+                            <input type="radio" name="king" value="King" id="King">
+                            King
+                        </label>
+                    </li>
+                    <li>
+                        <label for="queen">
+                            <input type="radio" name="queen" value="queen" id="queen">
+                            Queen
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <p>
+                <label for="name">
+                    Name: <span aria-label="required">*</span>
+                    <input type="text" name="name" id="name">
+                </label>
+            </p>
+            <p>
+                <label for="email">
+                    E-mail: <span aria-label="required">*</span>
+                    <input type="text" name="email" id="email">
+                </label>
+            </p>
+            <p>
+                <label for="password">
+                    Password: <span aria-label="required">*</span>
+                    <input type="text" name="password" id="password">
+                </label>
+            </p>
+        </section>
+        <section>
+            <h2>Payment information</h2>
+            <ul>
+                <li>
+                    <label for="card_type">
+                        Card type:
+                        <select id="card_type" name="card_type">
+                            <option value="Visa">Visa</option>
+                            <option value="Mastercard">Mastercard</option>
+                            <option value="American Express">American Express</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label for="card_number">
+                        Card Number:
+                        <input type="tel" name="card_number" id="card_number">
+                    </label>
+                </li>
+                <li>
+                    <label for="Expiry">
+                        Expiration date:
+                        <input type="date" name="expiry" id="expiry">
+                    </label>
+                </li>
+            </ul>
+            <button type="submit">Validate this form</button>
+
+        </section>
+    </form>
+</body>
+
+</html>
