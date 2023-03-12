@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The odin form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left-sidebar">
+            <img src="./green-leaf.jpg" alt="" id="left-bg">
+            <div class="logo">
+                <div id="logo-holder">
+                    <img src="./odin-lined.png" alt="" srcset="">
+                </div>
+                <p id="logo-txt">ODIN</p>
+            </div>
+            <div class="credit">
+                <p id="credits">Photo by <a
+                        href="https://unsplash.com/fr/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie
+                        West</a> on <a
+                        href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="upper-side">
+                <div class="upper-txtcontainer">
+                    <p class="upper-maintxt">This is not a real online service! You know you need something like this in
+                        your life to help you realize your deepest dreams.</p>
+                    <p class="upper-maintxt">Sign up <i>now</i> to get started</p>
+                    <br>
+                    <p class="upper-maintxt">You <i>know</i> you want to.</p>
+                </div>
+            </div>
+            <div class="form">
+                <form action="#" method="get" id="hero-form">
+                    <div id="form-container">
+                        <h2 id="form-heading">Let's do this!</h2>
+                        <br>
+                        <p id="info-container">
+                        <p class="form-row">
+                            <label for="usr_fname">
+                                First name
+                                <input type="text" name="usr_fname" id="usr_fname">
+                                <span class="error" id="fname_error"></span>
+                              </label>
+                              <label for="usr_lname">
+                                Last name
+                                <input type="text" name="usr_lname" id="usr_lname">
+                                <!-- <span id="fname_error">* This field can't be blank.</span> -->
+                              </label>
+                        </p>
+                        <br>
+                        <p class="form-row">
+                            <label for="usr_email">
+                                Email
+                                <input type="email" name="usr_email" id="usr_email">
+                                <span class="error" id="email_error"></span> 
+                            </label>
+                            <label for="usr_number">
+                                Phone number
+                                <input type="number" name="usr_number" id="usr_number">
+                                <!-- <span id="fname_error">* This field can't be blank.</span> -->
+                            </label>
+                        </p>
+                        <br>
+                        <p class="form-row">
+
+                            <label for="usr_pass">
+                                Password
+                                <input type="password" name="usr_pass" id="usr_pass">
+                                <span class="error" id="pass_error"></span>
+                            </label>
+                            <label for="usr_cpass">
+                                Confirm password
+                                <input type="password" name="usr_cpass" id="usr_cpass">
+                                <span  class="error" id="cpass_error"></span>
+                            </label>
+                        </p>
+                        </p>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="lower-side">
+                <div class="lower-container">
+                    <button type="button" id="submit-btn">Create Account</button> 
+                    <br>
+                    <br>
+                    <p id="lower-txt">Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

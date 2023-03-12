@@ -1,0 +1,245 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Odin-face";
+    src: url(./Norse-Bold.otf);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* padding: 20px; */
+}
+
+.left-sidebar{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    background-color: green;
+    /* background: url(./green-leaf.jpg); */
+}
+
+.logo{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    margin-top: 30%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-holder img{
+    width: 100%;
+    height: 100%;
+}
+
+#logo-holder{
+    height: 86%;
+    width: 20%;
+}
+
+
+#logo-txt{
+    font-family: "Odin-face";
+    font-size: 7rem;
+    color: white;
+}
+
+.credit{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+#credits{
+    position: relative;
+    font-size: 0.85rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#credits a{
+    text-decoration: none;
+    color: white;
+}
+
+.right-side{
+    height: 100%;
+    width: 70%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.upper-side{
+    width: 100%;
+    /* position: relative; */
+    height: calc(90%/2.7);
+    /* border: 1px solid black; */
+    background-color: #eff5fb;
+    display: flex;
+    align-items: flex-end;
+}
+
+.upper-txtcontainer{
+    overflow-wrap: break-word;
+    width: 60%;
+    height: max-content;
+    /* border: 1px solid black; */
+    margin-left: 2.5%;
+    margin-bottom: 3.5%;
+}
+
+.upper-maintxt{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+label{
+    position: relative;
+    display: block;
+}
+
+label input{
+    display: block;
+}
+
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.form{
+    width: 100%;
+    height: calc(90%/2.3);
+    /* border: 1px solid black; */
+    display: flex;
+    box-shadow: 0 5px 5px -5px rgb(140, 124, 124);
+    z-index: 1;
+    background-color: white;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-container{
+    height: 90%;
+    width: max-content;
+    margin-left: 3.5%;
+    justify-content: center;
+    /* border: 3px solid black; */
+}
+
+#font-container+#form-heading{
+    color: black;
+    font-size: 13px;
+}
+
+input{
+    border-radius: 3px;
+    height: 25px;
+    /* margin-top: 1px; */
+    border: 1px solid rgb(187, 187, 95);
+    outline: 1px solid blue;
+    margin-bottom: 2px;
+}
+
+input:focus{
+    box-shadow: 2.5px 2.5px 5px rgb(89, 109, 72);
+    stroke: none;
+    outline: 1px solid rgb(89, 109, 72);
+    border: 1px solid rgb(89, 109, 72);
+}
+
+.wrong{
+    outline: 1px solid red;
+    border: 1px solid red;
+}
+
+.wrong:focus{
+    box-shadow: 2.5px 2.5px 5px red;
+    stroke: none;
+    outline: 1px solid red;
+    border: 1px solid red;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    /* margin-top: 5px; */
+    letter-spacing: 2px;
+    font-family: "Odin-face";
+    font-weight: bold;
+}
+
+.lower-side{
+    width: 100%;
+    height: calc(90%/3);
+    background-color: #eff5fb;
+    /* box-shadow: inset(0px 5px 5px 10px); */
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(65, 62, 62);
+}
+
+#left-bg{
+    width: 100%;
+    height: 100%;
+}
+
+#submit-btn{
+    width: 11rem;
+    height: 2.3rem;
+    border-radius: 5px;
+    background-color: rgb(89, 109, 72);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px  grey;
+    cursor: pointer;
+}
+
+#submit-btn{
+    border: 0;
+}
+
+#submit-btn:active{
+    box-shadow: -2px -2px 4px  grey;
+}
+
+.lower-container{
+    margin-left: 2.5%;
+    margin-top: 3.5%;
+    position: relative;
+}
+
+#lower-txt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#lower-txt a{
+    color: #596D48;
+    font-weight: 600;
+}
